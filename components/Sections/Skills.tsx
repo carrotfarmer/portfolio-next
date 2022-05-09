@@ -6,7 +6,7 @@ import {
   SiGraphql,
   SiPrisma,
   SiNestjs,
-  SiExpress,
+  SiNextdotjs,
 } from "react-icons/si";
 
 import { motion } from "framer-motion";
@@ -40,7 +40,7 @@ const Skills = () => {
           }}
         >
           <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
-            <SiNodedotjs size={48} className="text-green-500" />
+            <SiNodedotjs size={48} className="text-green-400" />
           </a>
         </motion.div>
         <motion.div
@@ -84,8 +84,8 @@ const Skills = () => {
             scale: 1.1,
           }}
         >
-          <a href="https://expressjs.com" target="_blank" rel="noopener noreferrer">
-            <SiExpress size={48} className="text-white" />
+          <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
+            <SiNextdotjs size={48} className="text-white" />
           </a>
         </motion.div>
       </div>

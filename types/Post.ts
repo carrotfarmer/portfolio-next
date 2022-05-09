@@ -3,4 +3,6 @@ export interface IPost {
   brief: string;
   coverImage: string;
   slug: string;
+  totalReactions: number;
+  responseCount: number;
 }

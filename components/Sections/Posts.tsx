@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { GRADIENTS } from "../../lib/constants";
 
+import { BLOG_BORDERS } from "../../lib/constants";
 import { fetchPosts } from "../../lib/fetchPosts";
+
 import { IPost } from "../../types/Post";
+
 import { Post } from "../Misc/Post";
 
 interface PostsProps {}
@@ -11,7 +13,7 @@ export const Posts: React.FC<PostsProps> = ({}) => {
   const [posts, setPosts] = useState<IPost[] | null>();
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async (): Promise<void> => {
       try {
         const posts = await fetchPosts();
 
@@ -32,7 +34,7 @@ export const Posts: React.FC<PostsProps> = ({}) => {
           <Post
             post={post}
             key={post.slug}
-            gradient={GRADIENTS[Math.floor(Math.random() * GRADIENTS.length)]}
+            borderColor={BLOG_BORDERS[Math.floor(Math.random() * BLOG_BORDERS.length)]}
           />
         ))}
       </div>

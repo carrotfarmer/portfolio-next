@@ -1,13 +1,12 @@
 import type { NextComponentType } from "next";
 
-import Link from "next/link";
 import { GRADIENTS } from "../../lib/constants";
 
 import { Project } from "../Misc/Project";
 
 const Projects: NextComponentType = () => {
   return (
-    <div className="font-sen my-16 px-3" id="projects">
+    <div className="my-16 px-3 font-sen" id="projects">
       <p className="text-3xl font-bold text-white">Featured Projects</p>
       <div className="my-8 flex flex-col items-center justify-center gap-10 sm:flex-row">
         <Project

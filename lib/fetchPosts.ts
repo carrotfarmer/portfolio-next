@@ -1,4 +1,6 @@
-export const fetchPosts = async () => {
+import { IPost } from "../types/Post";
+
+export const fetchPosts = async (): Promise<IPost[]> => {
   const postsQuery = `
   query {
     user(username: "carrotfarmer") {
@@ -8,6 +10,8 @@ export const fetchPosts = async () => {
           brief
           slug
           coverImage
+          totalReactions
+          responseCount
         }
       }
     }

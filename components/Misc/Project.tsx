@@ -8,12 +8,7 @@ interface ProjectProps {
   gradient: string;
 }
 
-export const Project: React.FC<ProjectProps> = ({
-  name,
-  desc,
-  href,
-  gradient,
-}) => {
+export const Project: React.FC<ProjectProps> = ({ name, desc, href, gradient }) => {
   return (
     <Link href={href} passHref>
       <a
@@ -24,7 +19,7 @@ export const Project: React.FC<ProjectProps> = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="bg-primary flex h-full w-full flex-col items-center justify-center rounded-lg px-2 text-center font-medium">
+        <div className="flex h-full w-full flex-col items-center justify-center rounded-lg bg-primary px-2 text-center font-medium">
           <p className="text-xl font-semibold">{name}</p>
           <p>{desc}</p>
         </div>

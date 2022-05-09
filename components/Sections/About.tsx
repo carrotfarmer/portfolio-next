@@ -29,6 +29,7 @@ const About: NextComponentType = () => {
 
         <p className="mt-4 text-gray-400">
           I like to build web applications, write blog posts on tech and <br /> explore programming.
+          Apart from coding, I like to read, draw and play sports.
         </p>
 
         <Link href="https://blog.dhruva.is-a.dev" passHref>
