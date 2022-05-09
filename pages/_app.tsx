@@ -32,14 +32,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         title="Dhruva | Web Developer"
         titleTemplate="Dhruva | Web Developer"
         defaultTitle="Dhruva | Web Developer"
-        description="Hi, I'm Dhruva, a web developer, blogger and a student!"
+        description="Hi, I'm Dhruva, a web developer, blogger, and student!"
         openGraph={{
           url: "https://dhruva.is-a.dev/",
           title: "Dhruva | Web Developer",
           description: "Hi, I'm Dhruva, a web developer, blogger and a student!",
           images: [
             {
-              url: "https://res.cloudinary.com/db9rnrbbn/image/upload/v1652115799/Dhruva_Srinivas_l5sv41.png",
+              url: "https://res.cloudinary.com/db9rnrbbn/image/upload/v1652117453/ud_j4oybq.png",
               width: 1200,
               height: 630,
               alt: "Dhruva | Web Developer",
