@@ -24,7 +24,7 @@ const About: NextComponentType = () => {
           </Link>
         </p>
         <p className="mt-1 text-lg text-gray-300">
-          Backend Developer, Blogger, Student, Tech Enthusiast
+          Developer, Blogger, Student, Software Enthusiast
         </p>
 
         <p className="mt-4 text-gray-400">
