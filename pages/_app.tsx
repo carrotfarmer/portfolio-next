@@ -37,14 +37,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           url: "https://dhruva.is-a.dev/",
           title: "Dhruva | Web Developer",
           description: "Hi, I'm Dhruva, a web developer, blogger and a student!",
-          // images: [
-          //   {
-          //     url: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1643532760/og-image_dwcwhp.png",
-          //     width: 800,
-          //     height: 420,
-          //     alt: "Anurag | Frontend Developer",
-          //   },
-          // ],
+          images: [
+            {
+              url: "https://res.cloudinary.com/db9rnrbbn/image/upload/v1652115799/Dhruva_Srinivas_l5sv41.png",
+              width: 800,
+              height: 420,
+              alt: "Dhruva | Web Developer",
+            },
+          ],
         }}
         twitter={{
           handle: "@carrotfarmer",
