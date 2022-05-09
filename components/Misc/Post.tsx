@@ -9,10 +9,9 @@ import { IPost } from "../../types/Post";
 
 interface PostProps {
   post: IPost;
-  borderColor: string;
 }
 
-export const Post: React.FC<PostProps> = ({ post, borderColor }) => {
+export const Post: React.FC<PostProps> = ({ post }) => {
   return (
     <Link href={`https://blog.dhruva.is-a.dev/${post.slug}`} passHref>
       <a
@@ -20,9 +19,7 @@ export const Post: React.FC<PostProps> = ({ post, borderColor }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div
-          className={`flex h-full w-full flex-col items-center rounded-xl bg-primary text-center font-medium ${borderColor}`}
-        >
+        <div className="flex h-full w-full flex-col items-center rounded-xl bg-primary text-center font-medium">
           <Image src={post.coverImage} width="400" height="200" alt="Post cover image" />
           <div className="p-2">
             <p className="pt-5 text-xl font-semibold">{post.title}</p>
