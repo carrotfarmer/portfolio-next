@@ -390,30 +390,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/josefin-sans/-/josefin-sans-4.5.9.tgz#765c8fd84a51fdb3ba7bc6e0a2b9e0d58884a475"
   integrity sha512-JrF46M/zzKd5xKBtgWyD2uhzS9IsB2EWDuEqRfPeA9QzIrmEVf43CwUIA1m5he1lZ06kCMJliSN8tsfqxZ4URw==
 
-"@fontsource/jost@^4.5.6":
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/@fontsource/jost/-/jost-4.5.6.tgz#0625eb72a2f6936b928b338de930eba839d861d8"
-  integrity sha512-qPelIv5eAo249dils+1XDwBiUAdyFHucm3xKzHiUc8Cj1T1mIN11J3R8p3FYMlO48Jb65JGJmgIG6W98oLkU0w==
-
 "@fontsource/pt-sans@^4.5.8":
   version "4.5.8"
   resolved "https://registry.yarnpkg.com/@fontsource/pt-sans/-/pt-sans-4.5.8.tgz#2f652033adb02296d7cd1ba8a305b61f9a977096"
   integrity sha512-nJ4D9b5LqBSdHXp7Gka8D7cmkXAUOYeOEkE/fYEgyfMhwzyoYSzkeH/aYhpXiWANAtXhOMc4O/NWtL74sqCljA==
-
-"@fontsource/sen@^4.5.3":
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/sen/-/sen-4.5.5.tgz#d436bbf96acd2c9e4c33dd33a4bad072f2e44a8a"
-  integrity sha512-mYqUVtIOk1DSBP95vxLSA2RQBelzNJQ9IXzbY5ymfoD8LODwkKQQzM+cONm8FV92prJPuuN61wb0zivPM1+5RQ==
-
-"@gitmoji/commit-types@1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@gitmoji/commit-types/-/commit-types-1.1.5.tgz#8ca89aeea4e253a3818ac63206b4eb4f2352c4ff"
-  integrity sha512-8D3FZMRY+gtYpTcHG1SOGmm9CFqxNh6rI9xDoCydxHxnWgqInbdF3nk9gibW5gXA58Hf2cVcJaLEcGOKLRAtmw==
-
-"@gitmoji/parser-opts@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.3.0.tgz#7118a512342afd89c895cb2fd95454fa73f377bb"
-  integrity sha512-NqfoW12eXMdDJz3g3NHnopEgDoqdY1YshO6XxIVPOqotGTDcjD1sL28AVKskbYveGmHBPdHieRRv6M9Iq7dt4w==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.2"
@@ -978,23 +958,6 @@ color-name@^1.1.4, color-name@~1.1.4:
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-commitlint-config-gitmoji@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.2.5.tgz#a0de3b5d2adde5f31fcb38edb872811dc5992857"
-  integrity sha512-2Es3QtiOzrNHNuYsonNHodNZIub17+F0/ZukDlVz4FdrRZvYi1f5B1bTr23QPL1QmlhgYcXkNxLOQhegKqaA/g==
-  dependencies:
-    "@gitmoji/commit-types" "1.1.5"
-    "@gitmoji/parser-opts" "1.3.0"
-    commitlint-plugin-gitmoji "2.2.0"
-
-commitlint-plugin-gitmoji@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.2.0.tgz#e8fd35f1fd9f5790d7382d2d00bc90452ff24e56"
-  integrity sha512-njFLibrctUTeYjJYqiG9EOnCUcX/OvHCf96bArYBIbH7IEV6fylslVTt6pQcCvaMfOPUBj3f+a3g1eYchggZVw==
-  dependencies:
-    dotenv "^8.2.0"
-    emoji-name-map "^1.2.9"
-
 commitlint@^16.2.3:
   version "16.2.3"
   resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-16.2.3.tgz#fed4102985480dc1d3686e09b8aabc51a87ed0d2"
@@ -1206,24 +1169,10 @@ dot-prop@^5.1.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@^8.2.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
-  integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
-
 electron-to-chromium@^1.3.896:
   version "1.4.12"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.12.tgz"
   integrity sha512-zjfhG9Us/hIy8AlQ5OzfbR/C4aBv1Dg/ak4GX35CELYlJ4tDAtoEcQivXvyBdqdNQ+R6PhlgQqV8UNPJmhkJog==
-
-emoji-name-map@^1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/emoji-name-map/-/emoji-name-map-1.2.9.tgz#32a0788e748d9c7185a29a000102fb263fe2892d"
-  integrity sha512-MSM8y6koSqh/2uEMI2VoKA+Ac0qL5RkgFGP/pzL6n5FOrOJ7FOZFxgs7+uNpqA+AT+WmdbMPXkd3HnFXXdz4AA==
-  dependencies:
-    emojilib "^2.0.2"
-    iterate-object "^1.3.1"
-    map-o "^2.0.1"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -1234,11 +1183,6 @@ emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.npmjs.org/emoji-regex/-/emoji-regex-9.2.2.tgz"
   integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
-
-emojilib@^2.0.2:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/emojilib/-/emojilib-2.4.0.tgz#ac518a8bb0d5f76dda57289ccb2fdf9d39ae721e"
-  integrity sha512-5U0rVMU5Y2n2+ykNLQqMoqklN9ICBT/KsvC1Gz6vqHbz2AXXGkG+Pm5rMWk/8Vjrr/mY9985Hi8DYzn1F09Nyw==
 
 enquirer@^2.3.5:
   version "2.3.6"
@@ -2055,11 +1999,6 @@ isexe@^2.0.0:
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
-iterate-object@^1.3.0, iterate-object@^1.3.1:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/iterate-object/-/iterate-object-1.3.4.tgz#fa50b1d9e58e340a7dd6b4c98c8a5e182e790096"
-  integrity sha512-4dG1D1x/7g8PwHS9aK6QV5V94+ZvyP4+d19qDv43EzImmrndysIl4prmJ1hWWIGCqrZHyaHBm6BSEWHOLnpoNw==
-
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -2201,13 +2140,6 @@ make-error@^1.1.1:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.6.tgz#2eb2e37ea9b67c4891f684a1394799af484cf7a2"
   integrity sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
-
-map-o@^2.0.1:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/map-o/-/map-o-2.0.10.tgz#b656a75cead939a936c338fb5df8c9d55f0dbb23"
-  integrity sha512-BxazE81fVByHWasyXhqKeo2m7bFKYu+ZbEfiuexMOnklXW+tzDvnlTi/JaklEeuuwqcqJzPaf9q+TWptSGXeLg==
-  dependencies:
-    iterate-object "^1.3.0"
 
 map-obj@^1.0.0:
   version "1.0.1"
@@ -3098,11 +3030,6 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
-
-swr@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/swr/-/swr-1.2.2.tgz#6cae09928d30593a7980d80f85823e57468fac5d"
-  integrity sha512-ky0BskS/V47GpW8d6RU7CPsr6J8cr7mQD6+do5eky3bM0IyJaoi3vO8UhvrzJaObuTlGhPl2szodeB2dUd76Xw==
 
 tailwindcss@^3.0.24:
   version "3.0.24"
