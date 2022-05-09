@@ -40,8 +40,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           images: [
             {
               url: "https://res.cloudinary.com/db9rnrbbn/image/upload/v1652115799/Dhruva_Srinivas_l5sv41.png",
-              width: 800,
-              height: 420,
+              width: 1200,
+              height: 630,
               alt: "Dhruva | Web Developer",
             },
           ],
