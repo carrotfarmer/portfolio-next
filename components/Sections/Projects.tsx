@@ -14,14 +14,12 @@ const Projects: NextComponentType = () => {
           desc="Taking your cubing skills to the moon!"
           href="https://cubedeck.netlify.app"
           gradient={GRADIENTS[Math.floor(Math.random() * GRADIENTS.length)]}
-          // gradient="from-[#D8B4FE] to-[#818CF8]"
         />
 
         <Project
           name="kitty.js"
           desc="A JavaScript wrapper for TheCatAPI"
           href="https://www.npmjs.com/package/@kittyjs/kitty-js"
-          // gradient="from-pink-300 via-purple-300 to-indigo-400"
           gradient={GRADIENTS[Math.floor(Math.random() * GRADIENTS.length)]}
         />
 

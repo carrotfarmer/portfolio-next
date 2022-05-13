@@ -3,6 +3,8 @@ import type { NextComponentType } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { motion } from 'framer-motion'
+
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { VscGithubAlt } from "react-icons/vsc";
 
@@ -27,20 +29,22 @@ const About: NextComponentType = () => {
           Developer, Blogger, Student, Software Enthusiast
         </p>
 
-        <p className="mt-4 text-gray-400">
+        <p className="mt-4 text-gray-400 pb-5">
           I like to build web applications, write blog posts on tech and <br /> explore programming.
           Apart from coding, I like to read, draw and play sports.
         </p>
 
         <Link href="https://blog.dhruva.is-a.dev" passHref>
+          <motion.div whileHover={{
+            scale: 1.025
+          }}>
           <a
-            className="text-md mt-4 flex cursor-pointer flex-row items-center gap-1 font-jost text-gray-400 duration-100 hover:ml-2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Check out my Blog
-            <HiOutlineArrowNarrowRight />
+            <button className="rounded-lg px-5 py-2 bg-yellow-300 hover:bg-yellow-400 flex flex-row">Blog <HiOutlineArrowNarrowRight className="pl-1" size={24}/></button>
           </a>
+          </motion.div>
         </Link>
       </div>
 
