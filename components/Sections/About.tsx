@@ -34,19 +34,19 @@ const About: NextComponentType = () => {
           Apart from coding, I like to read, draw and play sports.
         </p>
 
-        <Link href="https://blog.dhruva.is-a.dev" passHref>
-          <motion.div
-            whileHover={{
-              scale: 1.025,
-            }}
-          >
+        <motion.div
+          whileHover={{
+            scale: 1.025,
+          }}
+        >
+          <Link href="https://blog.dhruva.is-a.dev" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <button className="flex flex-row rounded-lg bg-yellow-300 px-5 py-2 hover:bg-yellow-400">
                 Blog <HiOutlineArrowNarrowRight className="pl-1" size={24} />
               </button>
             </a>
-          </motion.div>
-        </Link>
+          </Link>
+        </motion.div>
       </div>
 
       <div className="hidden custom:block">
