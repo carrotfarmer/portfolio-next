@@ -1,16 +1,15 @@
 import Link from "next/link";
 import React from "react";
+import { IProject } from "../../types/Project";
 
 interface ProjectProps {
-  name: string;
-  desc: string;
-  href: string;
+  project: IProject
   gradient: string;
 }
 
-export const Project: React.FC<ProjectProps> = ({ name, desc, href, gradient }) => {
+export const Project: React.FC<ProjectProps> = ({ project, gradient }) => {
   return (
-    <Link href={href} passHref>
+    <Link href={project.href} passHref>
       <a
         style={{
           background: `linear-gradient(to right, ${gradient})`,
@@ -20,8 +19,8 @@ export const Project: React.FC<ProjectProps> = ({ name, desc, href, gradient }) 
         rel="noopener noreferrer"
       >
         <div className="flex h-full w-full flex-col items-center justify-center rounded-lg bg-primary px-2 text-center font-medium">
-          <p className="text-xl font-semibold">{name}</p>
-          <p>{desc}</p>
+          <p className="text-xl font-semibold">{project.name}</p>
+          <p>{project.desc}</p>
         </div>
       </a>
     </Link>
