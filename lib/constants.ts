@@ -18,13 +18,13 @@ export const PROJECTS: IProject[] = [
     href: "https://cubedeck.netlify.app",
   },
   {
+    name: "Taskboard",
+    desc: "Todoist integration right in your browser homepage.",
+    href: "https://github.com/carrotfarmer/taskboard",
+  },
+  {
     name: "kitty.js",
     desc: "A JavaScript wrapper for TheCatAPI",
     href: "https://npmjs.com/package/@kittyjs/kitty-js",
-  },
-  {
-    name: "cleansweep",
-    desc: "A CLI that organizes your downloads.",
-    href: "https://github.com/carrotfarmer/cleansweep",
   },
 ];

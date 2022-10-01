@@ -3,7 +3,7 @@ import React from "react";
 import { IProject } from "../../types/Project";
 
 interface ProjectProps {
-  project: IProject
+  project: IProject;
   gradient: string;
 }
 
