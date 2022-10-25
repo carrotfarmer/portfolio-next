@@ -6,6 +6,7 @@ module.exports = {
   },
   images: {
     domains: ["cdn.hashnode.com", "i.scdn.co"],
-    unoptimized: true,
+    loader: "akamai",
+    path: "/"
   },
 };
