@@ -1,12 +1,14 @@
 const path = require("path");
 
-module.exports = {
+const withOptimizedImages = require("next-optimized-images");
+
+module.exports = withOptimizedImages({
+  handleImages: ["jpeg", "png"],
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
   images: {
     domains: ["cdn.hashnode.com", "i.scdn.co"],
-    loader: "akamai",
-    path: "/"
+    disableStaticImages: true,
   },
-};
+});
