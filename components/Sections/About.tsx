@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextComponentType } from "next";
 
 import Image from "next/image";
@@ -51,7 +52,7 @@ const About: NextComponentType = () => {
       </div>
 
       <div className="custom:block hidden">
-        <Image
+        <img
           src="/assets/avatar.png"
           width="112"
           height="112"
