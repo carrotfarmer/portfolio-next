@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -16,17 +15,12 @@ export const Post: React.FC<PostProps> = ({ post }) => {
   return (
     <Link href={`https://blog.dhruva.is-a.dev/${post.slug}`} passHref>
       <a
-        className="h-[23rem] w-[21rem] cursor-pointer rounded-md p-1 text-white duration-100 hover:scale-105 md:h-[27rem] md:w-[23rem]"
+        className="h-[23rem] w-[21rem] cursor-pointer rounded-md p-1 text-white duration-100 hover:scale-105 md:h-[25rem] md:w-[23rem]"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="bg-primary flex h-full w-full flex-col items-center rounded-xl text-center font-medium">
-          <img
-            src={post.coverImage}
-            width="400"
-            height="200"
-            alt="Post cover image"
-          />
+        <div className="flex h-full w-full flex-col items-center rounded-xl bg-primary text-center font-medium">
+          <Image src={post.coverImage} width="400" height="200" alt="Post cover image" />
           <div className="p-2">
             <p className="pt-5 text-xl font-semibold">{post.title}</p>
             <p className="pt-2">{post.brief.slice(0, 150) + "..."}</p>

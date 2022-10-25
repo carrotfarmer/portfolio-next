@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import type { NextComponentType } from "next";
 
 import Image from "next/image";
@@ -11,7 +10,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 
 const About: NextComponentType = () => {
   return (
-    <div className="font-sen flex flex-row items-center justify-between px-3 md:my-8">
+    <div className="flex flex-row items-center justify-between px-3 font-sen md:my-8">
       <div>
         <p className="text-3xl font-bold text-white">
           Dhruva Srinivas
@@ -31,9 +30,8 @@ const About: NextComponentType = () => {
         </p>
 
         <p className="mt-4 pb-5 text-gray-400">
-          I like to build web applications, write blog posts on tech and <br />{" "}
-          explore programming. Apart from coding, I like to read, draw and play
-          sports.
+          I like to build web applications, write blog posts on tech and <br /> explore programming.
+          Apart from coding, I like to read, draw and play sports.
         </p>
 
         <motion.div
@@ -51,8 +49,8 @@ const About: NextComponentType = () => {
         </motion.div>
       </div>
 
-      <div className="custom:block hidden">
-        <img
+      <div className="hidden custom:block">
+        <Image
           src="/assets/avatar.png"
           width="112"
           height="112"
