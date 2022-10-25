@@ -10,5 +10,6 @@ module.exports = withOptimizedImages({
   images: {
     domains: ["cdn.hashnode.com", "i.scdn.co"],
     disableStaticImages: true,
+    unoptimized: true,
   },
 });
