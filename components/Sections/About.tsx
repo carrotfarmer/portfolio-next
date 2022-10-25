@@ -1,6 +1,5 @@
 import type { NextComponentType } from "next";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import { motion } from "framer-motion";
@@ -50,7 +49,7 @@ const About: NextComponentType = () => {
       </div>
 
       <div className="hidden custom:block">
-        <Image
+        <img
           src="/assets/avatar.png"
           width="112"
           height="112"

@@ -20,7 +20,7 @@ export const Post: React.FC<PostProps> = ({ post }) => {
         rel="noopener noreferrer"
       >
         <div className="flex h-full w-full flex-col items-center rounded-xl bg-primary text-center font-medium">
-          <Image src={post.coverImage} width="400" height="200" alt="Post cover image" />
+          <img src={post.coverImage} width="400" height="200" alt="Post cover image" />
           <div className="p-2">
             <p className="pt-5 text-xl font-semibold">{post.title}</p>
             <p className="pt-2">{post.brief.slice(0, 150) + "..."}</p>
