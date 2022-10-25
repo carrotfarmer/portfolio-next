@@ -52,7 +52,7 @@ const About: NextComponentType = () => {
 
       <div className="custom:block hidden">
         <Image
-          src={require("../../public/assets/avatar.png")}
+          src="/assets/profile.png"
           width="112"
           height="112"
           className="rounded-full"
