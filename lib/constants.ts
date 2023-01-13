@@ -18,6 +18,11 @@ export const PROJECTS: IProject[] = [
     href: "https://cubedeck.netlify.app",
   },
   {
+    name: "rettiwt",
+    desc: "twitter without the fluff",
+    href: "https://rettiwtt.vercel.app",
+  },
+  {
     name: "Taskboard",
     desc: "Todoist integration right in your browser homepage.",
     href: "https://github.com/carrotfarmer/taskboard",
