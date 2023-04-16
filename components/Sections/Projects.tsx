@@ -9,7 +9,7 @@ const Projects: NextComponentType = () => {
   return (
     <div className="my-16 px-3 font-sen" id="projects">
       <p className="text-3xl font-bold text-white">Featured Projects</p>
-      <div className="my-8 flex flex-col items-center justify-center gap-10 sm:flex-row">
+      <div className="my-8 items-center justify-center grid grid-cols-5 gap-4">
         {PROJECTS.map((project: IProject) => (
           <Project
             project={project}

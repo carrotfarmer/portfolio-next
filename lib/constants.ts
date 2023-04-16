@@ -23,8 +23,13 @@ export const PROJECTS: IProject[] = [
     href: "https://rettiwtt.vercel.app",
   },
   {
+    name: "env-lock",
+    desc: "A CLI to manage your .env files.",
+    href: "https://github.com/carrotfarmer/env-lock"
+  },
+  {
     name: "Taskboard",
-    desc: "Todoist integration right in your browser homepage.",
+    desc: "Todoist extension for your browser homepage.",
     href: "https://github.com/carrotfarmer/taskboard",
   },
   {
