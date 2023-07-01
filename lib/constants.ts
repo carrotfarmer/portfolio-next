@@ -28,6 +28,11 @@ export const PROJECTS: IProject[] = [
     href: "https://github.com/carrotfarmer/env-lock"
   },
   {
+    name: "sz",
+    desc: "Easy-to-use disk usage CLI.",
+    href: "https://github.com/carrotfarmer/sz"
+  },
+  {
     name: "readist",
     desc: "the easiest way to track your reading",
     href: "https://readist.vercel.app"
