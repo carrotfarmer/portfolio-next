@@ -47,4 +47,9 @@ export const PROJECTS: IProject[] = [
     desc: "A JavaScript wrapper for TheCatAPI",
     href: "https://npmjs.com/package/@kittyjs/kitty-js",
   },
+  {
+    name: "snake",
+    desc: "snake",
+    href: "https://github.com/carrotfarmer/snake",
+  },
 ];
