@@ -33,6 +33,11 @@ export const PROJECTS: IProject[] = [
 		href: "https://github.com/carrotfarmer/sz",
 	},
 	{
+		name: "tinofind",
+		desc: "Lost & Found for Cupertino High School",
+		href: "https://github.com/carrotfarmer/tinofind",
+	},
+	{
 		name: "readist",
 		desc: "the easiest way to track your reading",
 		href: "https://readist.vercel.app",
