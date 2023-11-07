@@ -38,6 +38,11 @@ export const PROJECTS: IProject[] = [
 		href: "https://github.com/carrotfarmer/tinofind",
 	},
 	{
+		name: "chowdown",
+		desc: "markdown parser and transpiler",
+		href: "https://github.com/carrotfarmer/chowdown",
+	},
+	{
 		name: "readist",
 		desc: "the easiest way to track your reading",
 		href: "https://readist.vercel.app",
