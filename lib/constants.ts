@@ -43,6 +43,11 @@ export const PROJECTS: IProject[] = [
 		href: "https://github.com/carrotfarmer/chowdown",
 	},
 	{
+		name: "get-a-life",
+		desc: "Chrome extension to boost your productivity",
+		href: "https://github.com/carrotfarmer/get-a-life",
+	},
+	{
 		name: "readist",
 		desc: "the easiest way to track your reading",
 		href: "https://readist.vercel.app",
