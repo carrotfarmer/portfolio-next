@@ -3,9 +3,9 @@ import type { NextComponentType } from "next";
 import { SiGithub, SiTwitter, SiHashnode, SiLeetcode } from "react-icons/si";
 import { FiMail } from "react-icons/fi";
 
-import { Icon } from "../Misc/Icon";
+import { Icon } from "../components/Icon";
 
-const Contact: NextComponentType = () => {
+export const Contact: NextComponentType = () => {
   return (
     <div className="divide divide-y divide-dotted text-white">
       <div></div>
@@ -33,5 +33,3 @@ const Contact: NextComponentType = () => {
     </div>
   );
 };
-
-export default Contact;

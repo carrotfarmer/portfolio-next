@@ -3,16 +3,15 @@ import Link from "next/link";
 
 import { VscGithubAlt } from "react-icons/vsc";
 
-import { NavLink } from "../Misc/NavLink";
+import { NavLink } from "../components/NavLink";
 
-const Header: NextComponentType = () => {
+export const Navbar: NextComponentType = () => {
   return (
     <header className={`py-8 font-jost sm:flex sm:flex-row sm:items-center sm:justify-between`}>
       <p className="hidden sm:flex sm:flex-row sm:gap-x-4">
         <NavLink text="Home" url="#" />
         <NavLink text="Skills" url="#skills" />
         <NavLink text="Projects" url="#projects" />
-        <NavLink text="Posts" url="#posts" />
       </p>
 
       <Link href="https://github.com/carrotfarmer/portfolio-next" passHref>
@@ -28,5 +27,3 @@ const Header: NextComponentType = () => {
     </header>
   );
 };
-
-export default Header;
