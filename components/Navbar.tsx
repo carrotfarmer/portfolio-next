@@ -7,7 +7,7 @@ import { NavLink } from "../components/NavLink";
 
 export const Navbar: NextComponentType = () => {
   return (
-    <header className={`py-8 font-jost sm:flex sm:flex-row sm:items-center sm:justify-between`}>
+    <header className="py-8 font-jost sm:flex sm:flex-row sm:items-center sm:justify-between">
       <p className="hidden sm:flex sm:flex-row sm:gap-x-4">
         <NavLink text="Home" url="#" />
         <NavLink text="Skills" url="#skills" />

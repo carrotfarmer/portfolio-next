@@ -38,7 +38,7 @@ export const About: NextComponentType = () => {
             scale: 1.025,
           }}
         >
-          <Link href="https://blog.dhruva.is-a.dev" passHref>
+          <Link href="https://thecatblog.hashnode.dev/" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <button className="flex flex-row rounded-lg bg-yellow-300 px-5 py-2 hover:bg-yellow-400">
                 Blog <HiOutlineArrowNarrowRight className="pl-1" size={24} />

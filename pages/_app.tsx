@@ -7,7 +7,6 @@ import "@fontsource/josefin-sans/400.css";
 import "@fontsource/barlow";
 
 import { NextSeo } from "next-seo";
-import Head from "next/head";
 import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -29,19 +28,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           url: "https://dhruva.is-a.dev/",
           title: "Dhruva | Web Developer",
           description: "Hi, I'm Dhruva, a web developer, blogger and a student!",
-          images: [
-            {
-              url: "https://res.cloudinary.com/db9rnrbbn/image/upload/v1652117453/ud_j4oybq.png",
-              width: 1200,
-              height: 630,
-              alt: "Dhruva | Web Developer",
-            },
-          ],
-        }}
-        twitter={{
-          handle: "@carrotfarmer",
-          site: "@carrotfarmer",
-          cardType: "summary_large_image",
         }}
         additionalMetaTags={[
           {
@@ -51,9 +37,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           },
         ]}
       />
-      <Head>
-        <link rel="icon" type="image/png" href="/assests/avatar.png" />
-      </Head>
       <Component {...pageProps} />
     </>
   );
