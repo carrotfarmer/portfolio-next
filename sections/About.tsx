@@ -25,12 +25,13 @@ export const About: NextComponentType = () => {
           </Link>
         </p>
         <p className="mt-1 text-lg text-gray-300">
-          Developer, Blogger, Student, Software Enthusiast
+          high school student studying in the Bay Area
         </p>
 
         <p className="mt-4 pb-5 text-gray-400">
-          I like to build stuff with code, write blog posts on tech and <br /> explore programming.
-          Apart from coding, I like to read, draw and play sports.
+          I like building cool stuff with code, writing about tech, and trying
+          out new programming ideas. When I&apos;m not coding, you’ll usually
+          find me reading, drawing, or playing sports.
         </p>
 
         <motion.div

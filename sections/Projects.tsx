@@ -13,7 +13,10 @@ export const Projects: NextComponentType = () => {
         {PROJECTS.map((project: ProjectType) => (
           <Project
             repoName={project.repoName}
+            displayName={project.displayName}
+            repoOwner={project.repoOwner}
             website={project.website}
+            description={project.description}
             key={project.repoName}
           />
         ))}

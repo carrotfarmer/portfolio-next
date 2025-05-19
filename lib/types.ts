@@ -1,4 +1,7 @@
 export type ProjectType = {
-    repoName: string;
-    website?: string;
+  repoOwner?: string;
+  repoName: string;
+  displayName?: string;
+  description?: string;
+  website?: string;
 };

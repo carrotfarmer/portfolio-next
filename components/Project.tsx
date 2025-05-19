@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { ProjectType } from "../lib/types";
+import { TbLoader2 } from "react-icons/tb";
 
 interface Project {
   name: string;
@@ -9,13 +10,23 @@ interface Project {
   stars: number;
 }
 
-export const Project: React.FC<ProjectType> = ({ repoName, website }) => {
+export const Project: React.FC<ProjectType> = ({
+  description,
+  displayName,
+  repoOwner,
+  repoName,
+  website,
+}) => {
   const [project, setProject] = React.useState<Project>(null);
+
+  console.log(repoOwner);
 
   useEffect(() => {
     const fetchGithub = async () => {
       const res = await fetch(
-        `https://api.github.com/repos/carrotfarmer/${repoName}`,
+        `https://api.github.com/repos/${
+          repoOwner ? repoOwner : "carrotfarmer"
+        }/${repoName}`,
         {
           headers: {
             Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
@@ -25,7 +36,7 @@ export const Project: React.FC<ProjectType> = ({ repoName, website }) => {
       const data = await res.json();
 
       setProject({
-        name: data.name,
+        name: displayName ? displayName : data.name,
         desc: data.description,
         language: data.language,
         stars: data.stargazers_count,
@@ -35,15 +46,24 @@ export const Project: React.FC<ProjectType> = ({ repoName, website }) => {
     };
 
     fetchGithub();
-  }, [repoName]);
+  }, [repoOwner, displayName, repoName]);
 
   if (!project) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <TbLoader2 className="h-4 w-4 text-white animate-spin" />
+      </div>
+    );
   }
 
   return (
     <div className="max-w-sm w-full h-48 rounded-lg border border-gray-700 bg-gray-900 text-white transition-transform transform hover:scale-105 hover:shadow-xl">
-      <Link href={`https://github.com/carrotfarmer/${repoName}`} passHref>
+      <Link
+        href={`https://github.com/${
+          repoOwner ? repoOwner : "carrotfarmer"
+        }/${repoName}`}
+        passHref
+      >
         <a className="block h-full">
           <div className="px-6 py-3 h-full flex flex-col justify-between">
             <div>
@@ -53,7 +73,7 @@ export const Project: React.FC<ProjectType> = ({ repoName, website }) => {
                 </span>
               </div>
               <p className="text-gray-400 text-base mb-2">
-                {project.desc}
+                {description ? description : project.desc}
               </p>
             </div>
             <div className="flex justify-between items-center">
