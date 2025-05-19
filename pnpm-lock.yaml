@@ -51,9 +51,6 @@ devDependencies:
   eslint-config-next:
     specifier: 12.0.7
     version: 12.0.7(eslint@8.4.1)(next@12.1.4)(typescript@4.5.2)
-  pnpx:
-    specifier: ^0.0.1
-    version: 0.0.1
   postcss:
     specifier: ^8.4.4
     version: 8.4.4
@@ -2099,11 +2096,6 @@ packages:
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
-
-  /pnpx@0.0.1:
-    resolution: {integrity: sha512-mBRUYL3Stk3D9Lm2Bpk9hpCeo9X1QcFUTfwyBEjVDJpI/1/xOxruz5nHJuQLnaBWddAI+iNgo/2qY0qt0Nnf/w==}
-    hasBin: true
-    dev: true
 
   /popmotion@11.0.3:
     resolution: {integrity: sha512-Y55FLdj3UxkR7Vl3s7Qr4e9m0onSnP8W7d/xQLsoJM40vs6UKHFdygs6SWryasTZYqugMjm3BepCF4CWXDiHgA==}
